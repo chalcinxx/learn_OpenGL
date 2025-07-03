@@ -170,10 +170,13 @@ int main()
       glBindVertexArray(VAO);
 
       // Draw the first triangle
-      glDrawArrays(GL_TRIANGLES, 0, 3);
+      // glDrawArrays(GL_TRIANGLES, 0, 3);
 
       // Draw the second triangle
-      glDrawArrays(GL_TRIANGLES, 3, 3);
+      // glDrawArrays(GL_TRIANGLES, 3, 3);
+
+      // On reviewing the solution, it is more optimal to just draw all 6 vertices at once
+      glDrawArrays(GL_TRIANGLES, 0, 6);
 
       // Swap buffers and check and call events
       glfwSwapBuffers(window);
