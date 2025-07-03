@@ -46,7 +46,7 @@ int main()
    glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
    // Initialize the window
-   GLFWwindow* window = glfwCreateWindow(800, 600, "Hello, Triangle!", nullptr, nullptr);
+   GLFWwindow* window = glfwCreateWindow(800, 600, "2 Triangles.", nullptr, nullptr);
    if (!window)
       throw_ex("Failed to create the window!");
    
